@@ -16,7 +16,7 @@ let client;
 (async () => {
   const issuer = await Issuer.discover('https://oauth.id.jumpcloud.com'); // JumpCloud Issuer
   client = new issuer.Client({
-    client_id: 'aa214487-fdfb-491d-80ae-6bbbe4e8415a',
+    client_id: 'CLient ID here',
     client_secret: 'yooCUc~He5pIc456ObVlrc-luj',
     redirect_uris: ['http://localhost:3000/callback'],
     response_types: ['code']
