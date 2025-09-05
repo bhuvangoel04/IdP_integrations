@@ -11,7 +11,7 @@ const PORT = 3000;
 // Replace these with values from your miniOrange admin portal
 const samlStrategy = new SamlStrategy(
   {
-    entryPoint: 'https://bhuvan.xecurify.com/moas/idp/samlsso/ef5f2a0e-e9da-4668-9257-8da8049e7faa', // from miniOrange
+    entryPoint: 'https://<your host>.xecurify.com/moas/idp/samlsso/...', // from miniOrange
     issuer: 'urn:my-local-sp', // your SP Entity ID
     callbackUrl: 'http://localhost:3000/saml/acs', // must match what you entered in miniOrange
     cert: fs.readFileSync('./certs/miniorange-x509.pem', 'utf-8'),
