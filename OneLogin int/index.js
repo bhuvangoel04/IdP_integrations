@@ -16,8 +16,8 @@ let client;
 (async () => {
   const issuer = await Issuer.discover('https://bhuvan.onelogin.com/oidc/2');
   client = new issuer.Client({
-    client_id: '92a95b40-3a0d-013e-68f3-0089bea36c19250031',
-    client_secret: 'f98c80de332801d6805e7bfd2fc4a69905385a887282eefa9603fb59594f3803',
+    client_id: '',
+    client_secret: 'f98c80de332801d6805e7bfd2fc4a69905385a887282eefa9603fb59594f',
     redirect_uris: ['http://localhost:3000/callback'],
     response_types: ['code']
   });
